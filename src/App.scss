@@ -1,3 +1,18 @@
 .App {
   
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 1px solid lightgray;
+    width: 89px;
+    min-height: 100vh;
+    display: flex;
+
+    .icon {
+      border-bottom: 1px solid lightgray;
+      height: 79px;
+      width: 80px;
+    }
+  }
 }

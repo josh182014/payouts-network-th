@@ -16,6 +16,9 @@ function App() {
 
   return (
     <div className="App">
+      <div className="sidebar">
+        <span className="icon">Icon</span>
+      </div>
       <Employees />
     </div>
   );

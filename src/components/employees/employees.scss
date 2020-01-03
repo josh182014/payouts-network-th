@@ -5,6 +5,25 @@
     flex-wrap: wrap;
     align-items: center;
 
+    .see-more {
+        width: 100%;
+        text-align: center;
+        color: blue;
+        height: 50px;
+        padding-top: 30px;
+    }
+
+    .form-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        margin-top: 15px;
+        margin-right: 20px;
+        border: 1px solid rgb(141, 141, 141);
+        border-radius: 3px;
+    }
     h3 {
         display: inline;
     }
@@ -31,6 +50,7 @@
     }
     table {
         width: 95%;
+        margin-left: 10px;
         margin-top: 14px;
         text-align: left;
         border-collapse: collapse;
