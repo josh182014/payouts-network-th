@@ -10,7 +10,7 @@ const Employee = ({ employee }) => {
           {' '}
           {employee.lastName}
         </td>
-        <td>{employee.email}</td>
+        <td><a href={`mailto:${employee.email}`}>{employee.email}</a></td>
         <td>{employee.phone}</td>
         <td>
           {employee.address}
@@ -21,7 +21,7 @@ const Employee = ({ employee }) => {
           {' '}
           {employee.zipcode}
         </td>
-        <td>{employee.status ? 'Inactive' : 'Active'}</td>
+        <td>{employee.active ? `Active ${'X'}` : `Inactive ${'+'}`}</td>
       </tr>
     </>
   );

@@ -19,6 +19,6 @@ export default [
     city: 'Bozeman',
     state: 'MT',
     zipcode: 59715,
-    active: true,
+    active: false,
   },
 ];
