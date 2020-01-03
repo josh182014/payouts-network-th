@@ -1,0 +1,52 @@
+.employees-wrapper {
+    margin-left: 122px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    h3 {
+        display: inline;
+    }
+
+    button {
+        width: 231px;
+        margin-left: 69.3%;
+        height: 51px;
+        background-color: blue;
+        color: white;
+        font-weight: 800;
+        font-size: 15px;
+        border-radius: 7px;
+    }
+
+    input {
+        margin-top: 35px;
+        margin-left: 20px;
+        height: 25px;
+        border-radius: 3px;
+        width: 379px;
+        font-size: 16px;
+        padding: 5px;
+    }
+    table {
+        width: 90%;
+        margin-top: 20px;
+        text-align: left;
+        border-collapse: collapse;
+
+        :nth-child(1) {
+            padding-left: 55px;
+        }
+
+        th {
+            border-bottom: 1px solid gray;
+            padding: 10px 0;
+        }
+
+        td {
+            padding: 10px 0;
+            border-bottom: 1px solid gray;
+        }
+    }
+}
