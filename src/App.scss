@@ -12,7 +12,17 @@
     .icon {
       border-bottom: 1px solid lightgray;
       height: 79px;
-      width: 80px;
+      width: 69px;
+      margin-left: 10px;
+
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        width: 80%;
+      }
     }
   }
 }

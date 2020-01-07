@@ -12,7 +12,7 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(addemployees(mockEmployees));
+    dispatch(addemployees(mockEmployees)); // TODO remove when API is set up
     Axios.get(`${process.env.REACT_APP_API_ENDPOINT}/employees`)
       .then((response) => {
         dispatch(addemployees(response.data));
@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <div className="sidebar">
-        <span className="icon">Icon</span>
+        <span className="icon"><img src="/icon.png"></img></span>
       </div>
       <Route
         exact
