@@ -1,7 +1,16 @@
 import React from 'react';
 import './employee.scss';
+import Axios from 'axios';
 
 const Employee = ({ employee }) => {
+
+  const handleActivation = () => {
+    if (!employee.active) {
+      Axios.patch(`${process.env.REACT_APP_API_ENDPOINT}/employees/${employee.id}`);
+    } else {
+      Axios.delete(`${process.env.REACT_APP_API_ENDPOINT}/employees/${employee.id}`);
+    }
+  };
   return (
     <>
       <tr>
@@ -21,7 +30,7 @@ const Employee = ({ employee }) => {
           {' '}
           {employee.zipcode}
         </td>
-        <td>{employee.active ? `Active ${'X'}` : `Inactive ${'+'}`}</td>
+        <td>{employee.active ? <span onClick={handleActivation}>Active X</span> : <span onClick={handleActivation}>Inactive +</span>}</td>
       </tr>
     </>
   );

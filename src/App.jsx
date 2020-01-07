@@ -4,6 +4,7 @@ import mockEmployees from './mockemployees';
 import './App.scss';
 import Employees from './components/employees/employees';
 import { addemployees } from './redux/actions';
+import Axios from 'axios';
 
 function App() {
 
@@ -11,6 +12,13 @@ function App() {
 
   useEffect(() => {
     dispatch(addemployees(mockEmployees));
+    Axios.get(`${process.env.REACT_APP_API_ENDPOINT}/employees`)
+      .then((response) => {
+        dispatch(addemployees(response.data));
+      })
+      .catch((error) => {
+        console.log(error); // eslint-disable-line
+      });
   });
 
 
