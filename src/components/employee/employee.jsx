@@ -3,7 +3,6 @@ import './employee.scss';
 import Axios from 'axios';
 
 const Employee = ({ employee }) => {
-
   const handleActivation = () => {
     if (!employee.active) {
       Axios.patch(`${process.env.REACT_APP_API_ENDPOINT}/employees/${employee.id}`);
