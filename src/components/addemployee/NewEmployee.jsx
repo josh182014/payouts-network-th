@@ -41,8 +41,8 @@ const NewEmployee = () => {
       <div className="form-container">
         <h2>Enter Recipient Details</h2>
         <form name="contact" onSubmit={handleSubmit}>
-          <div>
-            <div>First Name</div>
+          <div className="input-wrapper">
+            <span className="input-title">First Name</span>
             <input
               autoCapitalize="none"
               type="text"
@@ -53,8 +53,8 @@ const NewEmployee = () => {
               required
             />
           </div>
-          <div>
-            <div>Street Address</div>
+          <div className="input-wrapper">
+            <span className="input-title">Street Address</span>
             <input
               autoCapitalize="none"
               type="text"
@@ -65,8 +65,8 @@ const NewEmployee = () => {
               required
             />
           </div>
-          <div>
-            <div>Last Name</div>
+          <div className="input-wrapper">
+            <span className="input-title">Last Name</span>
             <input
               autoCapitalize="none"
               type="text"
@@ -77,8 +77,8 @@ const NewEmployee = () => {
               required
             />
           </div>
-          <div>
-            <div>City</div>
+          <div className="input-wrapper">
+            <span className="input-title">City</span>
             <input
               autoCapitalize="none"
               type="text"
@@ -89,8 +89,8 @@ const NewEmployee = () => {
               required
             />
           </div>
-          <div>
-            <div>Email</div>
+          <div className="input-wrapper">
+            <span className="input-title">Email</span>
             <input
               autoCapitalize="none"
               type="email"
@@ -100,8 +100,8 @@ const NewEmployee = () => {
               value={form.email}
             />
           </div>
-          <div>
-            <div>State</div>
+          <div className="input-wrapper">
+            <span className="input-title">State</span>
             <input
               autoCapitalize="none"
               type="text"
@@ -112,8 +112,8 @@ const NewEmployee = () => {
               required
             />
           </div>
-          <div>
-            <div>Phone</div>
+          <div className="input-wrapper">
+            <span className="input-title">Phone</span>
             <input
               autoCapitalize="none"
               type="text"
@@ -123,8 +123,8 @@ const NewEmployee = () => {
               value={form.phone}
             />
           </div>
-          <div>
-            <div>Zip Code</div>
+          <div className="input-wrapper">
+            <span className="input-title">Zip Code</span>
             <input
               autoCapitalize="none"
               type="text"
