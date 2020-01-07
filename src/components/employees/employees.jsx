@@ -5,7 +5,6 @@ import './employees.scss';
 
 const Employees = () => {
   const employees = useSelector((state) => state.employees);
-  console.log('here', employees)
   return (
     <div className="employees-wrapper">
       <h3>Manage Recipients</h3>

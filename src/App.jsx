@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { Route } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import Axios from 'axios';
 import mockEmployees from './mockemployees';
 import './App.scss';
 import Employees from './components/employees/employees';
 import { addemployees } from './redux/actions';
-import Axios from 'axios';
 import NewEmployee from './components/addemployee/NewEmployee';
 
 function App() {
