@@ -1,13 +1,29 @@
 import React from 'react';
-import './employee.scss';
+import { useDispatch } from 'react-redux';
 import Axios from 'axios';
+import { addemployees } from '../../redux/actions';
+import './employee.scss';
 
 const Employee = ({ employee }) => {
+  const dispatch = useDispatch();
+
   const handleActivation = () => {
     if (!employee.active) {
-      Axios.patch(`${process.env.REACT_APP_API_ENDPOINT}/employees/${employee.id}`);
+      Axios.patch(`${process.env.REACT_APP_API_ENDPOINT}/employees/${employee.id}`)
+        .then((response) => {
+          dispatch(addemployees(response.data));
+        })
+        .catch((error) => {
+          console.log(error) // eslint-disable-line
+        });
     } else {
-      Axios.delete(`${process.env.REACT_APP_API_ENDPOINT}/employees/${employee.id}`);
+      Axios.delete(`${process.env.REACT_APP_API_ENDPOINT}/employees/${employee.id}`)
+        .then((response) => {
+          dispatch(addemployees(response.data));
+        })
+        .catch((error) => {
+          console.log(error) // eslint-disable-line
+        });
     }
   };
   return (
