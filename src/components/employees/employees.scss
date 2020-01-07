@@ -28,15 +28,20 @@
         display: inline;
     }
 
-    button {
-        width: 231px;
+    .button-link {
+        text-decoration: none;
         margin-left: 69.3%;
-        height: 51px;
-        background-color: blue;
-        color: white;
-        font-weight: 800;
-        font-size: 15px;
-        border-radius: 7px;
+
+
+        button {
+            width: 231px;
+            height: 51px;
+            background-color: blue;
+            color: white;
+            font-weight: 800;
+            font-size: 15px;
+            border-radius: 7px;
+        }
     }
 
     input {

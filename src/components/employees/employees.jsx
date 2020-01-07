@@ -9,7 +9,7 @@ const Employees = () => {
   return (
     <div className="employees-wrapper">
       <h3>Manage Recipients</h3>
-      <button type="button" className="new-button">Create New Recipient</button>
+      <a className="button-link" href="/addemployee"><button type="button" className="new-button">Create New Recipient</button></a>
       <div className="form-container">
         <input
           className="search"

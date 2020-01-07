@@ -1,4 +1,4 @@
-import { TEST, ADDEMPLOYEES } from '../actions';
+import { ADDEMPLOYEES } from '../actions';
 
 export const reducer = (state, action) => {
   switch (action.type) {
@@ -10,6 +10,5 @@ export const reducer = (state, action) => {
 };
 
 export const initialState = {
-  count: 0,
   employees: [],
 };

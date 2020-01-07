@@ -9,7 +9,6 @@ import Axios from 'axios';
 import NewEmployee from './components/addemployee/NewEmployee';
 
 function App() {
-
   const dispatch = useDispatch();
 
   useEffect(() => {
